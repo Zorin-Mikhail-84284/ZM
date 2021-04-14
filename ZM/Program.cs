@@ -83,7 +83,7 @@ namespace ZM
                     ticket.Add(shufledNumbers[index]);
                     shufledNumbers.RemoveAt(index);
                 } while (ticket.Count < 8 && shufledNumbers.Count > 0);
-                if(ticket.Count == )
+                if(ticket.Count == ) //
             }
 
             
