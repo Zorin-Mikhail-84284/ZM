@@ -74,9 +74,16 @@ namespace ZM
             
             //HashSet<Int32>
 
-            while(shufledNumbers.Count > 0)
+            while(shufledNumbers.Count > 8)
             {
-
+                HashSet<Int32> ticket = new HashSet<int>();
+                do
+                {
+                    Int32 index = Rnd.Next(0, shufledNumbers.Count);
+                    ticket.Add(shufledNumbers[index]);
+                    shufledNumbers.RemoveAt(index);
+                } while (ticket.Count < 8 && shufledNumbers.Count > 0);
+                if(ticket.Count == )
             }
 
             
