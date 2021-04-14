@@ -60,6 +60,8 @@ namespace ZM
                 if (oldSet.Count == 0 || oldSet.Count != newSet.Count) throw new ArgumentException();
                 for (Int32 i = 0; i < oldSet.Count; i++) if (oldSet[i] == newSet[i]) return i;
                 return -1;
+                //
+                //
             }
         }
 
